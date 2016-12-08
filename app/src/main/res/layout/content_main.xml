@@ -40,18 +40,6 @@
         android:layout_marginTop="13dp" />
 
     <Button
-        android:text="Google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnClickMe"
-        android:layout_above="@+id/btnSend"
-        android:layout_toRightOf="@+id/tvResult"
-        android:layout_toEndOf="@+id/tvResult"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginBottom="89dp" />
-
-    <Button
         android:text="+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,16 +48,6 @@
         android:layout_above="@+id/btnClickMe"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="-"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSub"
-        android:onClick="doSub"
-        android:layout_above="@+id/tvResult"
-        android:layout_alignLeft="@+id/tvNumber2"
-        android:layout_alignStart="@+id/tvNumber2" />
 
     <Button
         android:text="*"
@@ -93,16 +71,6 @@
         android:layout_alignStart="@+id/etNumber1"
         android:layout_marginBottom="34dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/etNumber1"
-        android:layout_below="@+id/tvNumber1"
-        android:layout_toRightOf="@+id/btnAdd"
-        android:layout_toEndOf="@+id/btnAdd" />
-
     <TextView
         android:text="number2"
         android:layout_width="wrap_content"
@@ -118,9 +86,42 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/etMsg"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/btnSub"
-        android:layout_toStartOf="@+id/btnSub"
-        android:layout_marginTop="79dp" />
+        android:layout_alignBottom="@+id/etNumber2"
+        android:layout_toLeftOf="@+id/btnMul"
+        android:layout_toStartOf="@+id/btnMul"
+        android:layout_marginBottom="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etNumber1"
+        android:layout_below="@+id/tvNumber1"
+        android:layout_alignLeft="@+id/etMsg"
+        android:layout_alignStart="@+id/etMsg"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSub"
+        android:onClick="doSub"
+        android:layout_below="@+id/etNumber2"
+        android:layout_alignRight="@+id/tvNumber2"
+        android:layout_alignEnd="@+id/tvNumber2" />
+
+    <Button
+        android:text="Google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClickMe"
+        android:layout_marginBottom="63dp"
+        android:layout_above="@+id/btnSend"
+        android:layout_toRightOf="@+id/btnSub"
+        android:layout_toEndOf="@+id/btnSub" />
 
 </RelativeLayout>
